@@ -9,7 +9,8 @@ follow the below instructions to Start with Garuda API
 This is the tech Stack we are using to develop Garuda API. Make sure you are familiar with all of these:-
 1. NodeJs - Server Side
 2. Hapi Framework - Creating routes using Server
-
+3. TypeScript - Language used for Node
+4. MongoDB - Database
 
 
 
