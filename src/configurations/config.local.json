@@ -1,0 +1,55 @@
+{
+    "database": {
+        "connectionString": "mongodb://localhost:27017/gblock",
+        "username": "User",
+        "password": "password",
+        "authConnectionString": "mongodb://localhost:27017/gblock"
+    },
+    "web3": {
+        "testnetUrl": "",
+        "mainnetUrl": "",
+        "sawtoothUrl": "http://localhost:3030",
+        "sawtoothUrl1": "http://localhost:3030",
+        "sawtoothAddress": "0x0000000000000000000000000000000000000000",
+        "ethereumAddress":"0x0000000000000000000000000000000000000000",
+        "testnetAddress":"0x0000000000000000000000000000000000000000"
+    },
+    "msg": {
+        "base_url": "",
+        "API_KEY": "xxxxxxxxxxxxxxxxxxxxxxx",
+        "SENDER_ID": "VERIFY",
+        "ROUTE_NO": 4
+    },
+    "server": {
+        "port": 9000,
+        "jwt": {
+            "secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "expiration": "1y",
+            "algorithm": "HS256",
+            "issuer": "Garuda Server",
+            "audience": "www.xxxxxxxxxxxx.com"
+        },
+        "routePrefix": "/api/v1",
+        "enableDefaultPasswordForTesting": false,
+        "defaultPasswordForTesting": "xxxxxx",
+        "plugins": [
+            "logger",
+            "jwt-auth",
+            "swagger",
+            "inert",
+            "h2o2",
+            "yar"
+        ],
+        "accessList": [
+            "127.0.0.1"
+        ]
+    },
+    "cookie": {
+        "ttl": "1d",
+        "encoding": "none",
+        "isSecure": true,
+        "isHttpOnly": true,
+        "clearInvalid": false,
+        "strictHeader": true
+    }
+}

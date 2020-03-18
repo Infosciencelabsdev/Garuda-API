@@ -1,0 +1,114 @@
+doctype html
+head
+  title GARUDA
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700' rel='stylesheet')
+  style.
+    .main{
+    width: 800px;
+    height: 600px;
+    outline:20px solid #4979bc;
+    border: 5px solid #e2e5f4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    }
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    }
+    page[size="A5"] {
+    width: 14.8cm;
+    height: 21cm;
+    }
+    page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    padding:50px;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    }
+    .title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21pt;
+    font-weight: 600;
+    padding-top: 10px;
+    }
+    .sub-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    padding-top: 40px;
+    color: #4979bc;
+    text-transform: capitalize;
+    }
+    .name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32pt;
+    font-weight: 600;
+    padding-top: 10px;
+    color: #4979bc;
+    }
+    .p-1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    padding-top: 10px;
+    text-transform: capitalize;
+    padding: 2rem 7rem;
+    line-height: 30px;
+    }
+    .p-2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    padding-top: 0px;
+    text-transform: capitalize;
+    padding: 0 7rem;
+    line-height: 30px;
+    }
+    span{
+    color: #4979bc;
+    }
+    .signature{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 2rem;
+    }
+    p.auth{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    font-weight: 600;
+    text-transform: capitalize;
+    }
+page(size='A5')
+  .container
+    .logo
+      img(src='http://158.69.118.172/assets/images/garuda.svg' width='150')
+    .title CERTIFICATE OF OWNERSHIP
+    .sub-title This is to certify that
+    .name #{certificate.name}
+    .p-1
+      | Having stake of 
+      span #{certificate.stake}%
+      |  in property named 
+      //- having hash 
+      //- span #{certificate.hash}
+      //- |   and 
+      span #{certificate.propertyName}
+      |  on date 
+      span #{certificate.date}
+      | .
+    .p-2
+      | This  certificate is abide by the terms of this contract 
+      span #{certificate.contractAddress}
+  .signature
+    p.auth Authorized sign
+    p

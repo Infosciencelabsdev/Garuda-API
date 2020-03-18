@@ -1,0 +1,38 @@
+{
+    "database": {
+        "connectionString": "mongodb://localhost:27017/ownoff",
+        "username": "User",
+        "password": "password",
+        "authConnectionString": "mongodb://127.0.0.1:27017/ownoff"
+    },
+    "msg": {
+        "base_url": "",
+        "API_KEY": "xxxxxxxxxxxxxxxxxxxxxxx",
+        "SENDER_ID": "OWNETP",
+        "ROUTE_NO": 4
+    },
+    "server": {
+        "port": 5000,
+        "jwt": {
+            "secret": "xxxxxxxxxxxxxxxxxxxxxxxx",
+            "expiration": "1d",
+            "algorithm": "HS256",
+            "issuer": "OwNet Cognier Server",
+            "audience": "www.ownet.com"
+        },
+        "routePrefix": "/api/v1",
+        "enableDefaultPasswordForTesting": false,
+        "defaultPasswordForTesting": "cognier",
+        "plugins": [
+            "logger",
+            "jwt-auth",
+            "swagger",
+            "inert",
+            "h2o2",
+            "yar"
+        ],
+        "accessList": [
+            "127.0.0.1"
+        ]
+    }
+}

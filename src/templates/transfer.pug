@@ -1,0 +1,118 @@
+doctype html
+head
+  style.
+    /*.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }*/
+    .text-center{
+    text-align: center;
+    }
+    page[size="A4"] {
+    width: 19cm;
+    height: 29.7cm;
+    }
+    page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    padding:50px;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    }
+    ol li{
+    padding: 12px 0;
+    }
+page(size='A4')
+  h2.text-center SALE OF LAND CONTRACT
+  p
+    | THE BUYER #{land_transfer.buyer.name} at #{land_transfer.buyer.address.street}  #{land_transfer.buyer.address.city},
+    |  #{land_transfer.buyer.address.state},  #{land_transfer.buyer.address.country}  #{land_transfer.buyer.address.zip}
+  p
+    | AGREES TO PURCHASE the land described in this Contract and all improvements (&quot;the
+    | Property&quot;) with vacant possession unless otherwise provided in the conditions together with the
+    | chattels (if any) described in this Contract at the price and on the other terms and conditions set
+    | out in this Contract.
+  ol
+    li
+      | The Property: The land known as #{land_transfer.property.name} and situated at #{land_transfer.property.address.street}  #{land_transfer.property.address.city},
+      |  #{land_transfer.property.address.state},  #{land_transfer.property.address.country}  #{land_transfer.property.address.zip}. The unique
+      | identifier for the property is #{land_transfer.property.identification_number}.
+    li
+      | All fixtures &amp; fittings and plant &amp; equipment, which are included in the Purchase
+      | Price.
+    li  Purchase Price: #{land_transfer.price_details.price}] ether.
+    li
+      | Manner of Payment: A deposit of [[Deposit Amount in Ether]] ether shall be paid
+      | within [[Initial Deposit Number of Days]] days of acceptance to be held by [[Deposit Holder]].
+      | The balance of the Purchase Price shall be paid on the Settlement Date, [[Settlement Date]].
+    li
+      | This Contract is conditional upon Finance Approval being obtained before the End
+      | Time
+    li
+      | The Buyer must:
+      ol(type='a')
+        li
+          | apply for Finance Approval to at least one Lender using, if required by the
+          | Lender, the Property as security;
+        li
+          | use best endeavours to obtain Finance Approval and if required by the Seller
+          | provide evidence in writing of the making of an application in good faith for Finance Approval,
+          | any loan offer made, and the reasons for the Buyer not accepting any loan offer made; and
+        li
+          | on receipt of the Finance Approval notify the Seller whereupon the condition
+          | in the paragraph above will then be satisfied.
+    li
+      | If on or before the End Time the Buyer is notified by the Lender that the application
+      | for Finance Approval is rejected or no Finance Approval is obtained, then the Buyer must notify
+      | the Seller of such rejection or non receipt as the case may be.
+    li
+      | If the Buyer has not waived the Finance Approval condition and communicated the
+      | waiver to the Seller prior to the End Time, then if:
+      ol(type='a')
+        li
+          | the Finance Approval condition is not satisfied; and
+        li   the Buyer has complied with its obligations
+      | THEN this Contract shall be deemed to have come to an end without the
+      | necessity of either party giving to the other notice to that effect. The Deposit and all other
+      | monies (if any) paid pursuant to this Contract shall then be refunded to the Buyer (less all bank
+      | and government charges) and there shall be no further claim under this Contract by either party
+      | in law or in equity against the other.
+    li
+      | If the Buyer fails to notify the Seller in accordance with paragraphs 6(c) or 7 the
+      | Buyer is in default and the Seller may without prejudice to any other remedies and rights
+      | available immediately terminate the Contract by notice in writing to the Buyer.
+page(size='A4')
+  ol(start='10')
+    li
+      | This clause shall operate for the benefit of both the Seller and the Buyer except that
+      | the Buyer by waiving the Buyer&rsquo;s rights pursuant to this clause at any time before the End Time
+      | shall be deemed to have received Finance Approval.
+    li
+      | Acceptance of this offer shall be sufficiently communicated to the Buyer if
+      | notification shall be given by the Seller to the Buyer that the acceptance has been signed by the
+      | Seller under this Contract.
+    li
+      | The General Conditions are incorporated into this Contract so far as they are not
+      | varied by or inconsistent with the express terms of this Contract.
+    li
+      | The Special Conditions printed below this line apply to this Contract.
+      | [[Special Conditions]]
+    li
+      | THE BUYER
+      br
+      | Buyer Signature:
+    li
+      | THE SELLER 
+      br
+      | #{land_transfer.seller.name} 
+      | #{land_transfer.buyer.address.street}  #{land_transfer.buyer.address.city},
+      | #{land_transfer.buyer.address.state},  #{land_transfer.buyer.address.country}  #{land_transfer.buyer.address.zip}
+
+  | Seller Signature:
+  br
+  br
+  | ACCEPTS the above offer.

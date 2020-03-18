@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "typeRoots": ["node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
+  },
+  "include": [
+    "src/**/**.ts",
+    "test/**/**.ts",
+    "./node_modules/types-web3-provider-engine/index.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

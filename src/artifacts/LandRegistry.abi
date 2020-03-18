@@ -1,0 +1,760 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newUser",
+				"type": "address"
+			},
+			{
+				"name": "_role",
+				"type": "uint8"
+			}
+		],
+		"name": "addUser",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_propId",
+				"type": "uint256"
+			}
+		],
+		"name": "approveChangeOwnership",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_propId",
+				"type": "uint256"
+			}
+		],
+		"name": "approveProperty",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_propId",
+				"type": "uint256"
+			},
+			{
+				"name": "_newOwner",
+				"type": "address"
+			}
+		],
+		"name": "buyRequest",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_propId",
+				"type": "uint256"
+			},
+			{
+				"name": "_newOwner",
+				"type": "address"
+			}
+		],
+		"name": "changeOwnership",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newUser",
+				"type": "address"
+			},
+			{
+				"name": "_role",
+				"type": "uint8"
+			}
+		],
+		"name": "changeRole",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_propId",
+				"type": "uint256"
+			},
+			{
+				"name": "_newValue",
+				"type": "uint256"
+			}
+		],
+		"name": "changeValue",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"name": "_propId",
+				"type": "uint256"
+			},
+			{
+				"name": "hash",
+				"type": "string"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			},
+			{
+				"name": "_location",
+				"type": "uint256[]"
+			},
+			{
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"components": [
+					{
+						"name": "street",
+						"type": "string"
+					},
+					{
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"name": "state",
+						"type": "string"
+					},
+					{
+						"name": "country",
+						"type": "string"
+					},
+					{
+						"name": "zip",
+						"type": "uint256"
+					}
+				],
+				"name": "_address",
+				"type": "tuple"
+			}
+		],
+		"name": "createProperty",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_propId",
+				"type": "uint256"
+			},
+			{
+				"name": "_value",
+				"type": "uint256"
+			},
+			{
+				"name": "listingType",
+				"type": "string"
+			}
+		],
+		"name": "listMarketplace",
+		"outputs": [
+			{
+				"components": [
+					{
+						"name": "propertyId",
+						"type": "uint256"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"name": "listingType",
+						"type": "string"
+					},
+					{
+						"name": "listedBy",
+						"type": "address"
+					},
+					{
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_propId",
+				"type": "uint256"
+			}
+		],
+		"name": "rejectProperty",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "ownerAddress",
+				"type": "address"
+			}
+		],
+		"name": "transferLand",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "ownerAddress",
+				"type": "address"
+			}
+		],
+		"name": "PropertyCreated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "message",
+				"type": "string"
+			}
+		],
+		"name": "message",
+		"type": "event"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "creatorAdmin",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getMarketplace",
+		"outputs": [
+			{
+				"components": [
+					{
+						"name": "propertyId",
+						"type": "uint256"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"name": "listingType",
+						"type": "string"
+					},
+					{
+						"name": "listedBy",
+						"type": "address"
+					},
+					{
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_propId",
+				"type": "uint256"
+			}
+		],
+		"name": "getPropertyDetails",
+		"outputs": [
+			{
+				"components": [
+					{
+						"name": "propertyId",
+						"type": "uint256"
+					},
+					{
+						"name": "hash",
+						"type": "string"
+					},
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "location",
+						"type": "uint256[]"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"name": "street",
+								"type": "string"
+							},
+							{
+								"name": "city",
+								"type": "string"
+							},
+							{
+								"name": "state",
+								"type": "string"
+							},
+							{
+								"name": "country",
+								"type": "string"
+							},
+							{
+								"name": "zip",
+								"type": "uint256"
+							}
+						],
+						"name": "direction",
+						"type": "tuple"
+					},
+					{
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"name": "listedBy",
+						"type": "address"
+					}
+				],
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"name": "getRole",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "userAddress",
+				"type": "address"
+			}
+		],
+		"name": "getUserProperties",
+		"outputs": [
+			{
+				"components": [
+					{
+						"name": "propertyId",
+						"type": "uint256"
+					},
+					{
+						"name": "hash",
+						"type": "string"
+					},
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "location",
+						"type": "uint256[]"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"components": [
+							{
+								"name": "street",
+								"type": "string"
+							},
+							{
+								"name": "city",
+								"type": "string"
+							},
+							{
+								"name": "state",
+								"type": "string"
+							},
+							{
+								"name": "country",
+								"type": "string"
+							},
+							{
+								"name": "zip",
+								"type": "uint256"
+							}
+						],
+						"name": "direction",
+						"type": "tuple"
+					},
+					{
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"name": "listedBy",
+						"type": "address"
+					}
+				],
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "marketplace",
+		"outputs": [
+			{
+				"name": "propertyId",
+				"type": "uint256"
+			},
+			{
+				"name": "value",
+				"type": "uint256"
+			},
+			{
+				"name": "listingType",
+				"type": "string"
+			},
+			{
+				"name": "listedBy",
+				"type": "address"
+			},
+			{
+				"name": "status",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "OwnerChain",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "properties",
+		"outputs": [
+			{
+				"name": "propertyId",
+				"type": "uint256"
+			},
+			{
+				"name": "hash",
+				"type": "string"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "value",
+				"type": "uint256"
+			},
+			{
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"components": [
+					{
+						"name": "street",
+						"type": "string"
+					},
+					{
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"name": "state",
+						"type": "string"
+					},
+					{
+						"name": "country",
+						"type": "string"
+					},
+					{
+						"name": "zip",
+						"type": "uint256"
+					}
+				],
+				"name": "direction",
+				"type": "tuple"
+			},
+			{
+				"name": "status",
+				"type": "uint8"
+			},
+			{
+				"name": "listedBy",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "propOwnerChange",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "userPropertyCount",
+		"outputs": [
+			{
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "users",
+		"outputs": [
+			{
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "Users",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint8"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
