@@ -44,7 +44,7 @@
     "good-squeeze": "^5.0.2",
     "gridfs-stream": "1.1.1",
     "h2o2": "^8.1.2",
-    "handlebars": "^4.0.11",
+    "handlebars": "^4.3.0",
     "hapi": "^17.2.0",
     "hapi-auth-jwt2": "^8.0.0",
     "hapi-cors-headers": "1.0.3",
