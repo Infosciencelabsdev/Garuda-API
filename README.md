@@ -34,6 +34,6 @@ See also the list of [contributors](https://github.com/Infosciencelabsdev/Garuda
 ## Contact Us
   Email:- info@infoscience.co
 ## License
-This project is licensed under the Apache License- see the [LICENSE](LICENSE) file for details
+This project is licensed under the Apache License- see the [LICENSE](https://github.com/Infosciencelabsdev/Garuda-API/blob/add-license-1/LICENSE) file for details
 
 
