@@ -31,5 +31,9 @@ Note : If you get any node module errors click on the error and at the point men
 
 See also the list of [contributors](https://github.com/Infosciencelabsdev/Garuda/graphs/contributors) who participated in this project.
 
+## Contact Us
+  Email:- info@infoscience.co
 ## License
+This project is licensed under the Apache License- see the [LICENSE](LICENSE) file for details
+
 
