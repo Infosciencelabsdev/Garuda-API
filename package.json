@@ -102,7 +102,7 @@
     "web3-net": "1.0.0-beta.46",
     "web3-providers": "1.0.0-beta.46",
     "web3-shh": "1.0.0-beta.46",
-    "web3-utils": "1.0.0-beta.46",
+    "web3-utils": "4.2.1",
     "websocket": "^1.0.28",
     "winston": "2.4.0",
     "wreck": "^14.1.4",
